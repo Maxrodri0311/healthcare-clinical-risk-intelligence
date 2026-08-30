@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: dim_patients
+    description: "Curated patient demographic dimension table with baseline comorbidity tiering"
+    columns:
+      - name: patient_id
+        description: "Unique identifier for each oncology patient"
+        tests:
+          - unique
+          - not_null
+      - name: patient_age
+        description: "Patient age in years"
+        tests:
+          - not_null
+      - name: insurance_payer_tier
+        description: "Payer category"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Medicare Advantage', 'Commercial PPO', 'Medicaid Managed', 'Commercial HMO']
+
+  - name: fct_oncology_admissions
+    description: "Star schema fact table integrating claims, radiation oncology protocols and 30-day readmissions"
+    columns:
+      - name: claim_hash
+        description: "Cryptographic SHA-256 identifier for each claim event"
+        tests:
+          - unique
+          - not_null
+      - name: allowed_claim_amount_usd
+        description: "Total adjudicated claim cost"
+        tests:
+          - not_null
+      - name: is_readmission_30d_incident
+        description: "Binary flag indicating unplanned acute hospitalization within 30 days"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]

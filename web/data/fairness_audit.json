@@ -1,0 +1,95 @@
+{
+  "regulation_standards": [
+    "HHS Section 1557",
+    "NYC Local Law 144",
+    "EEOC Uniform Guidelines"
+  ],
+  "disparate_impact_threshold": 0.75,
+  "demographic_evaluations": {
+    "gender": {
+      "attribute_name": "patient_gender",
+      "min_disparate_impact_ratio": 0.9365,
+      "compliance_status": "COMPLIANT",
+      "group_breakdown": [
+        {
+          "group": "Female",
+          "sample_size": 1057,
+          "flagged_episodes": 223,
+          "selection_rate": 0.211,
+          "disparate_impact_ratio": 0.9365
+        },
+        {
+          "group": "Male",
+          "sample_size": 910,
+          "flagged_episodes": 205,
+          "selection_rate": 0.2253,
+          "disparate_impact_ratio": 1.0
+        },
+        {
+          "group": "Non-Binary",
+          "sample_size": 33,
+          "flagged_episodes": 3,
+          "selection_rate": 0.0909,
+          "disparate_impact_ratio": 0.4035
+        }
+      ]
+    },
+    "age_cohort": {
+      "attribute_name": "age_cohort",
+      "min_disparate_impact_ratio": 0.7496,
+      "compliance_status": "NON_COMPLIANT_DISPARITY",
+      "group_breakdown": [
+        {
+          "group": "Adult (<65)",
+          "sample_size": 1044,
+          "flagged_episodes": 194,
+          "selection_rate": 0.1858,
+          "disparate_impact_ratio": 0.7496
+        },
+        {
+          "group": "Senior (65+)",
+          "sample_size": 956,
+          "flagged_episodes": 237,
+          "selection_rate": 0.2479,
+          "disparate_impact_ratio": 1.0
+        }
+      ]
+    },
+    "insurance_payer": {
+      "attribute_name": "insurance_payer_tier",
+      "min_disparate_impact_ratio": 0.7761,
+      "compliance_status": "COMPLIANT",
+      "group_breakdown": [
+        {
+          "group": "Commercial HMO",
+          "sample_size": 213,
+          "flagged_episodes": 41,
+          "selection_rate": 0.1925,
+          "disparate_impact_ratio": 0.7987
+        },
+        {
+          "group": "Commercial PPO",
+          "sample_size": 540,
+          "flagged_episodes": 101,
+          "selection_rate": 0.187,
+          "disparate_impact_ratio": 0.7761
+        },
+        {
+          "group": "Medicaid Managed",
+          "sample_size": 278,
+          "flagged_episodes": 67,
+          "selection_rate": 0.241,
+          "disparate_impact_ratio": 1.0
+        },
+        {
+          "group": "Medicare Advantage",
+          "sample_size": 969,
+          "flagged_episodes": 222,
+          "selection_rate": 0.2291,
+          "disparate_impact_ratio": 0.9506
+        }
+      ]
+    }
+  },
+  "overall_compliance": "FLAGGED_FOR_REVIEW"
+}
