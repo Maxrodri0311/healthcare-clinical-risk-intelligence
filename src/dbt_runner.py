@@ -1,5 +1,5 @@
 """
-RHI Radion Health, Inc. - DuckDB In-Memory dbt Transformation Runner
+RHI Healthcare Clinical Practice, Inc. - DuckDB In-Memory dbt Transformation Runner
 Executes dimensional modeling and materializes the Star Schema Lakehouse.
 """
 import os

@@ -1,5 +1,5 @@
 """
-RHI Radion Health, Inc. - Synthetic Oncology Telemetry & Claims Generator
+RHI Healthcare Clinical Practice, Inc. - Synthetic Oncology Telemetry & Claims Generator
 Generates 50,000+ realistic radiation oncology treatment & claim records with clinical noise.
 """
 import os
@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 def generate_oncology_dataset(num_records: int = 50000, random_seed: int = 42) -> pd.DataFrame:
     np.random.seed(random_seed)
-    print(f"[*] Generating {num_records:,} Radiation Oncology Claims for RHI Radion Health...")
+    print(f"[*] Generating {num_records:,} Radiation Oncology Claims for RHI Healthcare Clinical Practice...")
 
     patient_ids = [f"PAT-{i:06d}" for i in range(1, num_records + 1)]
     ages = np.random.normal(loc=64, scale=11, size=num_records).clip(28, 92).astype(int)

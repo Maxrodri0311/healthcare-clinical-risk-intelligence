@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🏥 RHI Radion Health — Oncology Risk Stratification & Claims Intelligence Lakehouse
+# 🏥 RHI Healthcare Clinical Practice — Oncology Risk Stratification & Claims Intelligence Lakehouse
 ### *Polyglot Architecture: dbt Core (Star Schema), DuckDB In-Memory OLAP & Cost-Sensitive Dual Gradient Boosting (XGBoost vs LightGBM)*
 
 <br/>
 
 [![CI Pipeline](https://img.shields.io/badge/CI_Pipeline-Passing-10B981?style=for-the-badge&logo=githubactions&logoColor=white)](.github/workflows/ci.yml)
-[![Live Interactive Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://Maxrodri0311.github.io/rhi-radion-health-intelligence/)
+[![Live Interactive Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://Maxrodri0311.github.io/healthcare-clinical-risk-intelligence/)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
 [![dbt Core](https://img.shields.io/badge/dbt_Core-1.7%2B_Star_Schema-FF694B?style=for-the-badge&logo=dbt&logoColor=white)](https://www.getdbt.com/)
@@ -19,7 +19,7 @@
 
 <br/>
 
-**[🌐 Launch Live Web Dashboard](https://Maxrodri0311.github.io/rhi-radion-health-intelligence/)** &nbsp;•&nbsp; **[🧪 Pytest Suite (5/5 Green)](tests/)** &nbsp;•&nbsp; **[🏛️ Technical Spec & Live Defense](00_SPEC.md)** &nbsp;•&nbsp; **[🗄️ dbt Models](dbt_project/)**
+**[🌐 Launch Live Web Dashboard](https://Maxrodri0311.github.io/healthcare-clinical-risk-intelligence/)** &nbsp;•&nbsp; **[🧪 Pytest Suite (5/5 Green)](tests/)** &nbsp;•&nbsp; **[🏛️ Technical Spec & Live Defense](00_SPEC.md)** &nbsp;•&nbsp; **[🗄️ dbt Models](dbt_project/)**
 
 <br/>
 
@@ -37,7 +37,7 @@ Maximiliano engineered an enterprise-grade polyglot Lakehouse combining dbt Core
 
 ## 🏛️ Executive Summary & Distributed Architecture
 
-**RHI Radion Health** processes massive streams of radiation oncology treatment protocols, clinical telemetry, and high-severity healthcare claims. This platform provides an end-to-end Modern Data Stack (MDS) lakehouse that models clinical data into a dimensional Star Schema, trains cost-calibrated gradient boosting models to predict 30-day acute ICU readmissions, and ensures demographic algorithmic parity.
+**RHI Healthcare Clinical Practice** processes massive streams of radiation oncology treatment protocols, clinical telemetry, and high-severity healthcare claims. This platform provides an end-to-end Modern Data Stack (MDS) lakehouse that models clinical data into a dimensional Star Schema, trains cost-calibrated gradient boosting models to predict 30-day acute ICU readmissions, and ensures demographic algorithmic parity.
 
 ```mermaid
 flowchart TD
@@ -98,8 +98,8 @@ This repository is intentionally architected as a **polyglot analytics suite**:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Maxrodri0311/rhi-radion-health-intelligence.git
-cd rhi-radion-health-intelligence
+git clone https://github.com/Maxrodri0311/healthcare-clinical-risk-intelligence.git
+cd healthcare-clinical-risk-intelligence
 
 # 2. Run Automated Pytest Suite (5/5 Passing)
 python -m pytest tests/ -v --tb=short

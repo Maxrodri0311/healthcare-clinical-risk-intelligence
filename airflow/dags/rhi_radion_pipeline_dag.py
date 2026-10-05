@@ -1,5 +1,5 @@
 """
-RHI Radion Health, Inc. - Apache Airflow Production DAG
+RHI Healthcare Clinical Practice, Inc. - Apache Airflow Production DAG
 Orchestrates End-to-End Radiation Oncology Claims Ingestion, dbt Transformations & ML Calibration.
 """
 from datetime import datetime, timedelta

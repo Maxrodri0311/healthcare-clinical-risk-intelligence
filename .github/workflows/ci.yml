@@ -1,4 +1,4 @@
-name: RHI Radion CI & Pages Deploy
+name: RHI Healthcare Analytics CI & Pages Deploy
 
 on:
   push:

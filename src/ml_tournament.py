@@ -1,5 +1,5 @@
 """
-RHI Radion Health, Inc. - Dual Machine Learning Tournament & Cost-Sensitive Decision Calibration
+RHI Healthcare Clinical Practice, Inc. - Dual Machine Learning Tournament & Cost-Sensitive Decision Calibration
 Compares XGBoost vs LightGBM for acute 30-day oncology readmission risk & optimizes cost threshold.
 """
 import os

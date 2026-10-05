@@ -1,6 +1,6 @@
-# 🏛️ SPECIFICATION BLUEPRINT: RHI Radion Health, Inc. - Data Scientist Bridge Project (GP-006)
+# 🏛️ SPECIFICATION BLUEPRINT: RHI Healthcare Clinical Practice, Inc. - Data Scientist Bridge Project (GP-006)
 
-**Empresa Objetivo:** RHI Radion Health, Inc.  
+**Empresa Objetivo:** RHI Healthcare Clinical Practice, Inc.  
 **Rol Solicitado:** Data Scientist  
 **Arquetipo Técnico:** `DATA_ENGINEERING & PREDICTIVE MODELING`  
 **Stack Mandatorio:** `XGBoost, LightGBM, Airflow, dbt Core, AWS (S3 / Glue / Athena), DuckDB OLAP, Parquet, Python 3.11+, JavaScript / Chart.js`  
@@ -8,7 +8,7 @@
 ---
 
 ## 🎯 1. Dolor de Negocio Real & Contexto Clínico
-**RHI Radion Health, Inc.** es una organización de tecnología médica y gestión oncológica que administra tratamientos de radioterapia, telemetría clínica y reclamaciones de seguros de salud de alto costo.
+**RHI Healthcare Clinical Practice, Inc.** es una organización de tecnología médica y gestión oncológica que administra tratamientos de radioterapia, telemetría clínica y reclamaciones de seguros de salud de alto costo.
 
 ### Fricciones Críticas de Negocio:
 1. **Riesgo de Readmisión Inesperada en Cuidados Intensivos (ICU):** Pacientes sometidos a protocolos intensivos de radioterapia (dosis $\ge 60\text{ Gy}$) combinados con comorbilidades severas (Índice de Charlson $\ge 4$) presentan readmisiones agudas no previstas.

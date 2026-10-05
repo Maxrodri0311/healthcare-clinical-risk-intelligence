@@ -1,5 +1,5 @@
 """
-RHI Radion Health, Inc. - Clinical AI Algorithmic Fairness & Bias Auditor
+RHI Healthcare Clinical Practice, Inc. - Clinical AI Algorithmic Fairness & Bias Auditor
 Evaluates compliance with HHS Section 1557 and NYC Local Law 144 (Four-Fifths / 80% Rule).
 """
 import json
@@ -13,7 +13,7 @@ class ClinicalFairnessAuditor:
         self.threshold_ratio = threshold_ratio  # EEOC / HHS 80% Rule (Four-Fifths)
 
     def audit_demographic_parity(self, parquet_path: str = "data/curated_fact_table.parquet") -> Dict[str, Any]:
-        print("[*] Auditing Algorithmic Fairness & Disparate Impact for RHI Radion...")
+        print("[*] Auditing Algorithmic Fairness & Disparate Impact for RHI Healthcare Analytics...")
         df = pd.read_parquet(parquet_path)
 
         audit_results = {
